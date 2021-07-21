@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Humanities & Philosophy | Survey Form</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">Philosophy and Humanities Survey Form</h1>
+        <p id="description">Time to reflect: how much do you know about Humanities and Philosophy?</p>
+    </header>
+
+    <form id="survey-form" action="#">
+        
+        <label id="name-label" for="name">Name</label> <br>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+        <br>
+
+        <label id="email-label" for="email">Email</label> <br>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+        <br>
+
+        <label id="number-label" for="age">Age <span>(optional)</span></label> <br>
+        <input type="number" name="age" id="number" placeholder="Age" min="10" max="100">
+
+        <br>
+
+        <label for="dropdown">How you classify your knowledge in Humanities?</label><br>
+        <select name="dropdown" id="dropdown" required>
+            <option disabled selected>Select an option</option>
+            <option value="basic">Basic</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+
+        <br>
+
+        <label for="future-study">Would you like to study more Humanities?</label> <br>
+        <input checked type="radio" name="future-study" id="future-study" value="definitely">Definitely <br>
+        <input type="radio" name="future-study" id="future-study" value="maybe">Maybe <br>
+        <input type="radio" name="future-study" id="future-study" value="notsure">Not sure 
+
+        <br>
+
+        <label for="past-study">Have you study Philosophy before in High School or by your own?</label> <br>
+        <select name="past-study" id="past-study">
+            <option disabled selected>Select an option</option>
+            <option value="alot">Yes, a lot</option>
+            <option value="littlebit">Yes, but just a little bit</option>
+            <option value="never">No, never</option>
+        </select>
+
+        <br>
+
+        <label for="philosophers">Have you ever heard about this philosophers? <span>(check all that apply)</span></label>
+        <input type="checkbox" name="philosophers" id="philosophers" value="thales">Thales of Miletus <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="socrates">Socrates <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="plato">Plato <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="aristotle">Aristotle <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="augustine">Saint Augustine of Hippo <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="thomas">Saint Thomas Aquinas <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="descartes">René Descartes <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="kant">Immanuel Kant <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="hobbes">Thomas Hobbes <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="rousseau">Jean-Jacques Rousseau <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="hegel">Friedrich Hegel <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="marx">Karl Marx <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="beauvoir">Simone de Beauvoir <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="sartre">Jean-Paul Sartre <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="arendt">Hannah Arendt <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="benjamin">Walter Benjamin <br>
+        <input type="checkbox" name="philosophers" id="philosophers" value="none">I've never heard about those philosophers
+
+        <br>
+
+        <label for="comments">Any comments or suggestions?</label> <br>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        
+    </form>
+</body>
+</html>
