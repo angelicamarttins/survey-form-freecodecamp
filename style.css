@@ -5,46 +5,138 @@
 * {
     margin: 0;
     padding: 0;
-    font: normal 16px 'Montserrat', sans-serif;
-    line-height: 1.5em;
+    font: 500 18px 'Montserrat', sans-serif;
+    line-height: 1.75em;
+    color: var(--cor4);
+}
+
+:root {
+    --cor0: rgba(137, 170, 217, 0.45);
+    --cor1: rgba(140, 134, 104, 0.8);
+    --cor2: rgba(242, 201, 126, 0.7);
+    --cor3: rgba(166, 90, 46, 0.7);
+    --cor4: #400601;
+}
+
+body {
+    background-image: linear-gradient(115deg, var(--cor2), var(--cor1)), url(atenas.jpg);
+    background-size: cover;
 }
 
 /* Header */
 
 #title {
-    padding-top: 1.5em;
+    padding: 1.5em 0 0 0;
+    margin: auto;
     text-align: center;
     font-weight: thin;
-    font-size: 2em;
+    font-size: 2rem;
+    max-width: 90%;
 }
 
 #description {
     padding: 1em 0 1.5em 0;
+    margin: auto;
     text-align: center;
     font-weight: thin;
-    font-size: 1.25em;
+    font-size: 1.25rem;
+    max-width: 90%;
 }
 
 /* Form */
 
 #survey-form {
-    max-width: 50%;
-    margin: auto;
+    max-width: 90%;
+    margin: 1em auto;
     background-color: aqua;
     border-radius: 5px;
+    background-color: var(--cor3);
+    padding-bottom: 0.75em;
 }
 
-input {
-    background-color: black;
-    width: 90%;
-    display: block;
-    margin: auto;
+.general-info,
+.knowledge,
+.future,
+.past,
+.philosophers,
+.comments {
+    padding: 0.25em 1em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.25em;
+    border: none;
+}
+
+.general-info > input,
+.knowledge > select,
+.past > select,
+.comments > textarea {
+    width: 100%;
+    margin: 0.05em 0;
     border-radius: 5px;
+    border: none;
 }
 
-#name-label,
-#email-label,
-#number-label {
-    padding: 1em 2em ;
+.general-info > input:focus,
+.knowledge > select:focus,
+.past > select:focus,
+.comments > textarea:focus {
+    background-color: var(--cor0);
 }
 
+.knowledge > select:hover,
+.past > select:hover {
+    cursor: pointer;
+}
+
+#submit {
+    width: 97%;
+    display: block;
+    margin: 1em auto;
+    padding: 0.25em;
+    text-align: center;
+    background-color: #89ABD9;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+#submit:hover {
+    background-color: #7695c0;
+    cursor: pointer;
+}
+
+span {
+    font-weight: bold;
+    font-size: 0.75rem;
+    
+}
+
+/* Media query */
+
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    #survey-form,
+    #title,
+    #description {
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    #survey-form,
+    #title,
+    #description {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 1400px) {
+    #survey-form,
+    #title,
+    #description {
+        max-width: 50%;
+    }
+}
