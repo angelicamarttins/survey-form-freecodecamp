@@ -19,7 +19,7 @@
 }
 
 body {
-    background-image: linear-gradient(115deg, var(--cor2), var(--cor1)), url(atenas.jpg);
+    background-image: linear-gradient(115deg, var(--cor2), var(--cor1)), url(img/atenas.jpg);
     background-size: cover;
 }
 
